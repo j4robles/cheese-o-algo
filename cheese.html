@@ -1,1 +1,104 @@
+<!DOCTYPE html>
 
+<html lang="en">
+    <head>
+			<meta charset="UTF-8">
+			<title>A Short Guide to Cheese</title>
+			<link rel="stylesheet" href="cheese.css" />
+			<style>
+				/* CSS will apply the last definition that was given to an element (unless it's !important). 
+				The last style definition for #warning comes from this style block because it is parsed after the 
+				separate cheese.css file, so the rule here takes priority. */
+				#warning {
+					background-color: black;
+					color: red;
+					font-style: italic;
+					font-weight: 900;
+				}
+			</style>
+    </head>
+    <body>
+			<main><article>
+				<header>
+					<h1>A Short Guide to Cheese</h1>
+					<p>by The CSE Cheese Society. Last updated <time datetime="2026-01">January 2026</time>.</p>
+				</header>
+
+				<p>Cheese is one of humanity's oldest prepared foods. People have made it for at least 7,000 
+					years, long before written history. At its core, cheese is simple: milk, salt, cultures, 
+					and rennet. Time and technique do the rest.
+				</p>
+				<section>
+					<h2>What Is Cheese, Really?</h2>
+					<p>Cheese begins when milk separates into curds and whey. The curds are pressed, salted, and 
+						aged. Every variable matters: the animal, the season, the cave, the patience of the maker. 
+						Change one and you get a different cheese. This is why a single recipe has produced 
+						thousands of distinct varieties.
+					</p>
+					<p>The word <q>cheese</q> comes from the Latin <span class="latin" lang="la">caseus</span>, 
+						which also gives us the word <span class="latin" lang="la">casein</span>, the main milk 
+						protein.
+					</p>
+				</section>
+
+				<section>
+					<h2>Famous Families of Cheese</h2>
+					<dl>
+						<dt>Fresh cheeses</dt>
+						<dd>Young and mild. They include mozzarella, ricotta, and chevre. Eat these within days.</dd>
+
+						<dt>Soft-ripened cheeses</dt>
+						<dd>Grow a white bloomy rind. Brie and Camembert are the classic examples. The rind is 
+							edible and you should eat it.
+						</dd>
+
+						<dt>Blue cheeses</dt>
+						<dd>Veined with Penicillium roqueforti. Roquefort, Gorgonzola, and Stilton lead this family. 
+							They are salty, sharp, and divisive.
+						</dd>
+
+						<dt>Hard cheeses</dt>
+						<dd>Aged for months or years. Parmigiano-Reggiano, aged Gouda, and Comte reward the wait with 
+							crystals of crunch and deep, nutty flavor.
+						</dd>
+					</dl>
+				</section>
+
+				<section>
+					<h2>A Word of Caution</h2>
+					<p id="warning"><strong>Warning:</strong> The American product known as <q>processed cheese food</q> 
+						is, at best, distantly related to cheese. Read the label.
+					</p>
+
+					<blockquote>
+						<p><q>Cheese is milk's leap toward immortality.</q></p>
+						<footer>— attributed to Clifton Fadiman</footer>
+					</blockquote>
+				</section>
+
+				<section>
+						<h2>Try It Yourself</h2>
+						<form>
+							<fieldset>
+								<legend>Which of these have you tasted?</legend>
+								<input type="checkbox" name="tasted" value="brie" /><label>Brie</label>
+								<input type="checkbox" name="tasted" value="roquefort" /><label>Roquefort</label>
+								<input type="checkbox" name="tasted" value="aged-gouda" /><label>Aged Gouda</label>
+							</fieldset>
+
+							<p>
+								<label>Tell us your favorite cheese:<br>
+									<input type="text" name="favorite" placeholder="e.g. Easy Cheese" />
+								</label>
+							</p>
+
+							<button type="submit">Add it to the guide</button>
+						</form>
+				</section>
+			</article></main>
+
+			<footer>
+				<p><small>Copyright <time datetime="2026">2026</time> The CSE Cheese Society. Cheese responsibly.</small></p>
+			</footer>
+    </body>
+</html>

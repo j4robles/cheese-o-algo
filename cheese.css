@@ -1,0 +1,93 @@
+/* page at github o algo */
+@import "var.css";
+/* Link is preferred in production cause @import forces sequential loading, which can severely bottleneck
+performance compared to <link> which permits parallel downloading. */
+
+* {
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--default-font-stack);
+    color: var(--text-color);
+    line-height: 2rem;
+    background-color: var(--background-color);
+    max-width: var(--max-content-width);
+    margin: 0 auto;
+}
+
+h1 {
+    font-size: 8rem; /* Titles should be eye-catching */
+    line-height: 1em;
+    padding: 0.25em 0em 0.25em;
+}
+
+section {
+    max-width: 90vmax;
+}
+
+span[lang] {
+    font-style: italic;
+}
+
+input[type="text"] {
+    border-color: black;
+    background: orangered;
+}
+[type="text"]::placeholder {
+    color: gold;
+    font-style: italic;
+}
+
+.latin {
+    background-color: crimson;
+    color: gold;
+    text-decoration: overline;
+    text-decoration-color: gold;
+    text-decoration-thickness: 2px;
+    border-color: black;
+    border-style: solid;
+}
+
+#warning {
+    background-color: yellow;
+    color: black;
+    font-style: italic;
+    font-weight: 600;
+}
+
+header p { /* Who needs to know about these guys, really? */
+    font-size: 0.1em;
+}
+
+article > p { /* This is shit everybaldi cares about though */
+    font-size: 2em;
+    text-transform: uppercase;
+}
+
+dt {
+    color: yellowgreen; /* The cheese went bad */
+    font-size: 1.2em;
+}
+
+dt + dd {
+    border-style: solid;
+    border-color: blueviolet;
+    background-color: cornflowerblue;
+}
+
+input:focus, button:focus {
+    border-style: solid;
+    border-width: 5px;
+    border-color: gray;
+}
+
+input[type="checkbox"]:checked + label {
+    background-color: darkolivegreen;
+    text-decoration: line-through;
+}
+
+#warning::before {
+    content: url(feral.png) / "!!! ";
+}
