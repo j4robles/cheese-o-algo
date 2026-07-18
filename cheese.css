@@ -1,4 +1,6 @@
-/* page at github o algo */
+/* https://cheese-o-algo.netlify.app */
+
+
 @import "var.css";
 /* Link is preferred in production cause @import forces sequential loading, which can severely bottleneck
 performance compared to <link> which permits parallel downloading. */
