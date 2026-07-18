@@ -14,7 +14,7 @@ body {
     font-family: var(--default-font-stack);
     color: var(--text-color);
     line-height: 2rem;
-    background-color: var(--background-color);
+    background-color: var(--default-background-color);
     max-width: var(--max-content-width);
     margin: 0 auto;
 }
@@ -77,6 +77,11 @@ dt + dd {
     border-style: solid;
     border-color: blueviolet;
     background-color: cornflowerblue;
+}
+
+button:hover {
+    background-color: var(--default-background-color);
+    color: var(--text-color);
 }
 
 input:focus, button:focus {

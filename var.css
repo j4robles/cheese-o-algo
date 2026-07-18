@@ -1,5 +1,5 @@
 :root { /* Graphic design is my passion or something */
-    --background-color: #FF69B4;
+    --default-background-color: #FF69B4;
     --text-color: #5200FF;
     --warning-background-color: #6C7A0E;
     --default-font-stack: sans-serif;
